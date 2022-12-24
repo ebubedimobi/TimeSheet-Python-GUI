@@ -3,6 +3,7 @@ from tkinter import ttk
 import json
 
 from calculatorBrain import calculate
+from JSONDATA import workers_string
 
 class MyClaculatorGUI: 
 
@@ -96,8 +97,7 @@ class MyClaculatorGUI:
     
 
     def loadData(self): 
-      with open('data.json') as f:
-        data = json.load(f)
+      data = json.loads(workers_string)
         
       self.part_time = data['part_time']
       self.departments = data['departments']

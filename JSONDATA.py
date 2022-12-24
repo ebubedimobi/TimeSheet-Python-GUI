@@ -1,3 +1,4 @@
+workers_string = '''
 {
 	"part_time": 8,
 	"departments": [
@@ -45,3 +46,4 @@
 		}
 	]
 }
+'''
